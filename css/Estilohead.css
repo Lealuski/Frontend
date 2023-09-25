@@ -32,13 +32,11 @@ header{
     display: none;
 }
 .ingresar a{
-                display: block;
-                color: white;
-                height: 45px;
-                text-decoration: none;
-                padding: 15px;
-     
-    
+    display: block;
+    color: white;
+    height: 45px;
+    text-decoration: none;
+    padding: 15px;
 }
 h1{
     float: left;
