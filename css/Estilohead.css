@@ -59,3 +59,12 @@ cursor: pointer;
 header .contenedorhead{
     display: table;
 }
+
+.column {
+    flex-basis: calc(33.33% - 20px);
+    margin-right: 20px;
+}
+
+.column:last-child {
+    margin-right: 0;
+}

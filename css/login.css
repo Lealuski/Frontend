@@ -5,9 +5,9 @@
 .clientescontenedor h2{
 color: #004AAD;
     float:none;
-        font-size: 28px;
+ font-size: 28px;
     margin: 6px 0;
-text-align: center;
+text-align: left;
 font-weight:bold;
 
 }
@@ -17,15 +17,104 @@ font-weight:bold;
 }
 
 .cards .card{
-    background: #A4B9D6;
+    background: #004AAD;
     display: flex;
-    width: 46%;
-    height: 200px;
+    width: 80%;
+    height: 500px;
     align-items: center;
     justify-content: space-evenly;
     border-radius: 5px;
     
 }
+#formulario {
+    text-align: center; 
+}
+
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    margin: 0 auto; 
+}
+#formulario {
+    text-align: center;
+}
+
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.column {
+    flex-basis: calc(33.33% - 20px);
+    margin-right: 20px;
+}
+
+.column:last-child {
+    margin-right: 0;
+}
+
+#formulario {
+    text-align: center;
+}
+
+.form-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.column {
+    flex-basis: calc(33.33% - 20px);
+    margin-right: 20px;
+}
+
+.column:last-child {
+    margin-right: 0;
+}
+
+.column input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+
+.column label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #ffffff;
+    text-align: left; 
+}
+
+
+.column label[for^="Descripción"] {
+    font-size: 18px;
+}
+
+
+.descripcion-input {
+    width: 100%;
+    height: 100px;
+}
+
+.button-container {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
 
 .cards .card h1{
 
@@ -34,21 +123,23 @@ font-weight:bold;
     
 }
 .cards .card > .contenido-texto-card{
-    width: 60%;
-    color: #004AAD;
+   justify-content: space-evenly;
+   width: 95%;
+    color: white;
 }
 .cards .card > .contenido-texto-card p{
     font-weight:bold;
     padding-top: 5px;
 }
 label {
+
     font-weight: bold;
     margin-bottom: 5px;
+    color: white;
   }
+ 
   
-  /* Estilo para los campos de entrada de texto */
-  input[type="text"],
-  input[type="password"] {
+  input[type="text"] {
     width: 100%;
     padding: 3px;
     margin-bottom: 10px;
@@ -57,18 +148,35 @@ label {
     font-size: 16px;
   }
  .boton{
-    background-color: #004AAD;
+    background-color: #7ED957;
     display: flex;
     float: none;
     margin: 10px 0;
     cursor: pointer;
-    width: 100px;
+    width: 80px;
     color:white;
     text-decoration: none;
-    padding: 7px;
+    padding: 6px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+  
+}
+.boton2{
+    background-color: #FF3131;
+    display: flex;
+    float: none;
+    margin: 10px 0;
+    cursor: pointer;
+    width: 80px;
+    color:white;
+    text-decoration: none;
+    padding: 6px;
     margin-top: 10px;
     border-radius: 5px;
     border: none;
 
-    transition: all 300ms ease;
 }
+
+
