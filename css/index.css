@@ -1,0 +1,74 @@
+.clientescontenedor{
+    padding: 50 0 30px 0
+
+}
+.clientescontenedor h2{
+color: #004AAD;
+    float:none;
+        font-size: 28px;
+    margin: 6px 0;
+text-align: center;
+font-weight:bold;
+
+}
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cards .card{
+    background: #A4B9D6;
+    display: flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    
+}
+
+.cards .card h1{
+
+    color: white;
+    font-size: 150px;
+    
+}
+.cards .card > .contenido-texto-card{
+    width: 60%;
+    color: #004AAD;
+}
+.cards .card > .contenido-texto-card p{
+    font-weight:bold;
+    padding-top: 5px;
+}
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 3px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+  }
+ .boton{
+    background-color: #004AAD;
+    display: flex;
+    float: none;
+    margin: 10px 0;
+    cursor: pointer;
+    width: 100px;
+    color:white;
+    text-decoration: none;
+    padding: 7px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+
+    transition: all 300ms ease;
+}
