@@ -43,18 +43,42 @@ margin: 10px 0;
 cursor: pointer;
 }
 
-.zonaPropaganda{
-    border-style:solid;
-    border-color: #fff;
-    border-width: 1px;
-    border-left-width: 90px;
-    border-right-width: 90px;
+.zonaPropaganda {
+    margin-top: 20px;
+    position: relative;
     height: 300px;
     background: #004AAD;
     width: 100%;
-    display:flex;
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    overflow: hidden;
 }
+
+.flecha-izquierda,
+.flecha-derecha {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.flecha-izquierda {
+    border-width: 40px 40px 40px 0;
+    border-color: transparent #fff transparent transparent;
+    left: 0;
+}
+
+.flecha-derecha {
+    border-width: 40px 0 40px 40px;
+    border-color: transparent transparent transparent #fff;
+    right: 0;
+}
+
 .textopromo{
     border-style:solid;
     border-color:  #004AAD;
