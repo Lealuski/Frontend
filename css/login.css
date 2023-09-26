@@ -1,22 +1,23 @@
-.clientescontenedor{
+.clientescontenedor {
     padding: 50 0 30px 0
-
 }
-.clientescontenedor h2{
-color: #004AAD;
-    float:none;
- font-size: 28px;
+
+.clientescontenedor h2 {
+    color: #004AAD;
+    float: none;
+    font-size: 28px;
     margin: 6px 0;
-text-align: left;
-font-weight:bold;
+    text-align: left;
+    font-weight: bold;
 
 }
-.cards{
+
+.cards {
     display: flex;
     justify-content: space-evenly;
 }
 
-.cards .card{
+.cards .card {
     background: #004AAD;
     display: flex;
     width: 80%;
@@ -24,18 +25,20 @@ font-weight:bold;
     align-items: center;
     justify-content: space-evenly;
     border-radius: 5px;
-    
+
 }
+
 #formulario {
-    text-align: center; 
+    text-align: center;
 }
 
 .form-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; 
-    margin: 0 auto; 
+    justify-content: space-between;
+    margin: 0 auto;
 }
+
 #formulario {
     text-align: center;
 }
@@ -93,7 +96,7 @@ font-weight:bold;
     font-weight: bold;
     margin-bottom: 5px;
     color: #ffffff;
-    text-align: left; 
+    text-align: left;
 }
 
 
@@ -116,61 +119,66 @@ font-weight:bold;
 
 
 
-.cards .card h1{
+.cards .card h1 {
 
     color: white;
     font-size: 150px;
-    
+
 }
-.cards .card > .contenido-texto-card{
-   justify-content: space-evenly;
-   width: 95%;
+
+.cards .card>.contenido-texto-card {
+    justify-content: space-evenly;
+    width: 95%;
     color: white;
 }
-.cards .card > .contenido-texto-card p{
-    font-weight:bold;
+
+.cards .card>.contenido-texto-card p {
+    font-weight: bold;
     padding-top: 5px;
 }
+
 label {
 
     font-weight: bold;
     margin-bottom: 5px;
     color: white;
-  }
- 
-  
-  input[type="text"] {
+}
+
+
+input[type="text"] {
     width: 100%;
     padding: 3px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 20px;
     font-size: 16px;
-  }
- .boton{
+}
+
+.boton {
     background-color: #7ED957;
     display: flex;
     float: none;
     margin: 10px 0;
     cursor: pointer;
     width: 80px;
-    color:white;
+    color: white;
     text-decoration: none;
     padding: 6px;
     margin-top: 10px;
     border-radius: 5px;
     border: none;
     text-align: center;
-  
+
 }
-.boton2{
+
+.boton2 {
     background-color: #FF3131;
     display: flex;
     float: none;
     margin: 10px 0;
     cursor: pointer;
     width: 80px;
-    color:white;
+    color: white;
     text-decoration: none;
     padding: 6px;
     margin-top: 10px;
@@ -178,5 +186,3 @@ label {
     border: none;
 
 }
-
-
