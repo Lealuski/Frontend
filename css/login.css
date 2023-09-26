@@ -12,6 +12,16 @@
 
 }
 
+.catTable{
+    display: table;
+    height: 100%;
+}
+.catElement{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
 .cards {
     display: flex;
     justify-content: space-evenly;
