@@ -1,0 +1,113 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mooli&family=Open+Sans:ital,wght@0,300;0,500;1,600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Mooli&family=Open+Sans:ital,wght@0,300;0,500;1,600&family=Zilla+Slab:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mooli', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+}
+header{
+    height: 50px;;
+    background: #004AAD;
+    width: 100%;
+    color: #fff;
+    top: 0;
+    left: 0;
+    z-index: 100 ;
+}
+
+.contenedorhead{
+    width: 98%;
+    margin: auto;
+}
+header label{
+float: right;
+font-size: 28px;
+margin: 6px 0;
+cursor: pointer;
+}
+
+header .contenedorhead{
+    display: table;
+}
+h1{
+    float: left;
+    cursor: pointer;
+ 
+font-size: 30px;
+margin: 10px 0;
+cursor: pointer;
+}
+
+.zonaPropaganda{
+    border-style:solid;
+    border-color: #fff;
+    border-width: 5px;
+    border-left-width: 90px;
+    border-right-width: 90px;
+    height: 300px;
+    background: #004AAD;
+    width: 100%;
+    display:flex;
+    
+}
+.textopromo{
+    border-style:solid;
+    border-color:  #004AAD;
+    border-width: 10px;
+    border-left-width: 90px;
+    border-right-width: 90px;
+    border-radius: 15%;
+    height: 280px;
+    background: white;
+    width: 100%;
+    text-align: center;
+}
+.titulopromo{
+    color: #004AAD;
+    font-size: 45px;
+}
+.contpromo{
+    color: goldenrod;
+    font-size: 40px;
+}
+
+.imagenLicuadora{
+    margin-left: 70px;
+    margin-top: 9px;
+    margin-bottom: 9px;
+    border: 10px solid #fffbfb;
+    border-radius: 3%;
+    padding: 5px;
+    width: 270px;
+}
+
+.titulo{
+
+    color: #004AAD;
+    text-align: center;
+    font-size: 50px;
+    border-style: solid;
+    border-color: white;
+    height: 180px;;
+    width: 100%;
+}
+.descripcion{
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: #91a1b6;
+    font-size: 10px;
+    border-style: solid;
+    border-color: #004AAD;
+    margin-left: 15%;
+    height: 70px;;
+    width: 70%;
+
+    
+}
