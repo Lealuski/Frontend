@@ -46,7 +46,7 @@ cursor: pointer;
 .zonaPropaganda{
     border-style:solid;
     border-color: #fff;
-    border-width: 5px;
+    border-width: 1px;
     border-left-width: 90px;
     border-right-width: 90px;
     height: 300px;
@@ -58,7 +58,7 @@ cursor: pointer;
 .textopromo{
     border-style:solid;
     border-color:  #004AAD;
-    border-width: 10px;
+    border-width: 15px;
     border-left-width: 90px;
     border-right-width: 90px;
     border-radius: 15%;
@@ -93,7 +93,7 @@ cursor: pointer;
     font-size: 50px;
     border-style: solid;
     border-color: white;
-    height: 180px;;
+    height: 100px;;
     width: 100%;
 }
 .descripcion{
@@ -102,10 +102,12 @@ cursor: pointer;
     justify-content: center;
     align-items: center;
     color: #91a1b6;
-    font-size: 10px;
+    font-size: 13px;
     border-style: solid;
     border-color: #004AAD;
     margin-left: 15%;
+    margin-top: 3%;
+    margin-bottom: 3%;
     height: 70px;;
     width: 70%;
 
