@@ -18,10 +18,11 @@ header{
     background: #004AAD;
     width: 100%;
     color: #fff;
-    position: fixed;
+    position: static;
     top: 0;
     left: 0;
     z-index: 100 ;
+    margin-bottom: 20px;
 }
 
 .contenedorhead{
