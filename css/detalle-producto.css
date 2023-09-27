@@ -1,0 +1,98 @@
+
+.detalle-producto-contenedor {
+    padding: 20px;
+}
+
+.titulo {
+    text-align: center;
+    color: #004AAD;
+}
+
+.detalle-producto {
+    display: flex;
+}
+
+.producto-imagen {
+    flex: 1;
+}
+.producto .tarjeta-blanca h1 {
+    background-color: #004AAD;
+    padding: 20px;
+    border-radius: 10px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 24px; 
+    margin: 0; 
+    flex: 1; 
+}
+
+.producto-imagen .tarjeta-blanca {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.producto-imagen img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.producto-detalles {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.producto-detalles h1{
+    flex: 1;
+    background-color: #004AAD;
+    padding: 10px;
+    height: 10px;
+  
+    color: #ffffff;
+    text-align: center;
+}
+
+
+.fila-detalle {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; 
+}
+
+.detalle {
+    flex: 1;
+    background-color: #004AAD;
+    padding: 20px;
+
+    color: #ffffff;
+    text-align: center;
+}
+
+
+.detalle h3 {
+    font-size: 18px;
+}
+
+.detalle p {
+    font-size: 16px;
+}
+
+
+.cajon-descripcion {
+    background-color: #004AAD;
+    padding: 20px;
+ 
+    color: #ffffff;
+    flex: 2; 
+}
+
+.cajon-descripcion h3 {
+    font-size: 18px;
+}
+
+.cajon-descripcion p {
+    font-size: 16px;
+}
