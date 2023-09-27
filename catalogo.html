@@ -1,4 +1,5 @@
 <html>
+
 <head>
     <title>Catalogo</title>
     <link rel="stylesheet" href="css/Estilohead.css">
@@ -9,17 +10,18 @@
     <link rel="stylesheet" href="css/catalogo.css">
     <meta charset="UTF-8">
 </head>
+
 <body>
     <header>
         <div class="contenedorhead">
-            <a href="/index.html"> <!-- Aqui va el html que haga majo del home -->
+            <a href="/index.html">
                 <h1 class="icon-home"></h1>
             </a>
             <a href="/catalogo.html">
                 <h1 style="margin-left: 50px;">Catalogo</h1>
             </a>
             <a href="/crud.html">
-                <h1 style="margin-left: 50px;">Crud</h1>
+                <h1 style="margin-left: 50px;">Crear producto</h1>
             </a>
             <a href="/login.html">
                 <label class="icon-user-circle" for="usuario">Ingresar</label>
@@ -37,7 +39,9 @@
                     <h1>Tomate</h1>
                     <p>Deliciosos tomates frescos.</p>
                     <p>Precio: $2.99</p>
-                    <button class="view-detail-btn">Ver detalle</button>
+                    <form action="/detalle.html">
+                        <button class="view-detail-btn">Ver detalle</button>
+                    </form>
                 </div>
             </div>
             <div class="product-card">
@@ -48,10 +52,12 @@
                     <h1>Brócoli</h1>
                     <p>Brócoli orgánico de alta calidad.</p>
                     <p>Precio: $3.49</p>
-                    <button class="view-detail-btn">Ver detalle</button>
+                    <form action="/detalle.html">
+                        <button class="view-detail-btn">Ver detalle</button>
+                    </form>
                 </div>
             </div>
-           
+
         </div>
     </section>
 
@@ -69,9 +75,10 @@
                 <p>Abierto Lunes-Viernes 8: 00 am - 8:00 pm</p>
                 <p>Sabados y Domingos 9:00 am - 9:30 pm</p>
             </div>
-        
+
         </div>
         <h2 class="titulo-final">&copy; Supermercado Flamel</h2>
     </footer>
 </body>
+
 </html>
