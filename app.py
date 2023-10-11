@@ -1,8 +1,9 @@
-from flask import Flask, render_template, request, url_for, redirect
+from flask import Flask, render_template, request, url_for, redirect, flash
 from LDB.conexion import DAO
 
 dao = DAO()
 app = Flask(__name__)
+app.secret_key = 'mysecretkey'
 
 @app.route('/index')
 def index():
@@ -18,7 +19,9 @@ def detalle():
 
 @app.route('/catalogo')
 def catalogo():
-    return render_template('catalogo.html')
+    getprods = dao.listar_productos()
+    print(getprods)
+    return render_template('catalogo.html', products=getprods)
 
 @app.route('/crud')
 def crud():
@@ -45,8 +48,10 @@ def insert_prod():
             , "cantidad" : cantidad
             , "url" : url
         }
-        print(dao.insertar_producto(prod))
-        return redirect(url_for('catalogo'))
+        mes = dao.insertar_producto(prod)
+        print(mes)
+        flash(mes)
+        return redirect(url_for('crud'))
 
 if __name__ == '__main__':
     app.run(port= 3000, debug=True)

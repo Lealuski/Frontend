@@ -19,7 +19,7 @@ class DAO():
         if self.conexion.is_connected():
             try:
                 cursor = self.conexion.cursor()
-                cursor.execute("SELECT * FROM producto ORDER BY id DESC")
+                cursor.execute("SELECT * FROM producto")
                 resultados = cursor.fetchall()
                 return resultados
             except Error as ex:
@@ -42,7 +42,7 @@ class DAO():
                     , producto.get('url') if producto.get('url') is not None else ""
                 ))
                 self.conexion.commit()
-                return 'Producto "{0} registrado"'.format(producto.get('nombrec'))
+                return 'Producto "{0}" registrado'.format(producto.get('nombrec'))
             except Error as ex:
                 print('Error al intentar la conexion: {0}'.format(ex))
 

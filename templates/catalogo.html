@@ -28,33 +28,21 @@
     <section class="catalogocontenedor">
         <h2 class="titulo">Catálogo</h2>
         <div class="product-list">
+            {% for prod in products %}
             <div class="product-card">
                 <div class="product-image">
                     <img src="img/tomato_680975.png" alt="Producto">
                 </div>
                 <div class="product-info">
-                    <h1>Tomate</h1>
-                    <p>Deliciosos tomates frescos.</p>
-                    <p>Precio: $2.99</p>
+                    <h1>{{prod.2}}</h1>
+                    <p>{{prod.4}}</p>
+                    <p>Precio: {{prod.6}}</p>
                     <form action="/detalle.html">
                         <button class="view-detail-btn">Ver detalle</button>
                     </form>
                 </div>
             </div>
-            <div class="product-card">
-                <div class="product-image">
-                    <img src="img/broccoli_2346952.png" alt="Producto">
-                </div>
-                <div class="product-info">
-                    <h1>Brócoli</h1>
-                    <p>Brócoli orgánico de alta calidad.</p>
-                    <p>Precio: $3.49</p>
-                    <form action="/detalle.html">
-                        <button class="view-detail-btn">Ver detalle</button>
-                    </form>
-                </div>
-            </div>
-
+            {% endfor %}
         </div>
     </section>
 
