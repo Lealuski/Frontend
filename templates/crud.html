@@ -32,38 +32,38 @@
             <div class="card">
                 <div class="contenido-texto-card">
                     <section id="formulario">
-                        <form class="form-container">
+                        <form class="form-container" action="/insert_prod" method="post">
                             <div class="column">
                                 <label for="nombrel">Nombre Corto:</label>
-                                <input type="text" id="nombrel" name="nombrel" required>
+                                <input type="text" id="nombrel" name="nombrel" placeholder="Nombre largo" required>
                                 <br>
                                 <label for="precio">Precio:</label>
-                                <input type="text" id="precio" name="precio" required>
+                                <input type="text" id="precio" name="precio" required placeholder="Precio">
                                 <br>
-                                <label for="Descripciónc">Descripción Corta:</label>
-                                <input type="text" id="Descripciónc" name="Descripciónc" class="descripcion-input"
-                                    required>
+                                <label for="Descripcionc">Descripción Corta:</label>
+                                <input type="text" id="Descripcionc" name="descripcionc" class="descripcion-input"
+                                    required placeholder="Descripcion Corta">
                             </div>
                             <div class="column">
                                 <label for="nombre">Nombre Largo:</label>
-                                <input type="text" id="nombre" name="nombre" required>
+                                <input type="text" id="nombre" name="nombre" required placeholder="Nombre largo">
                                 <br>
                                 <label for="promocion">Promoción:</label>
-                                <input type="text" id="promocion" name="promocion" required>
+                                <input type="text" id="promocion" name="promocion" placeholder="Promocion">
                                 <br>
-                                <label for="Descripciónl">Descripción Larga:</label>
-                                <input type="text" id="Descripciónl" name="Descripciónl" class="descripcion-input"
-                                    required>
+                                <label for="Descripcionl">Descripción Larga:</label>
+                                <input type="text" id="Descripcionl" name="descripcionl" class="descripcion-input"
+                                    placeholder="Descripcion Larga">
                             </div>
                             <div class="column">
                                 <label for="cantidad">Cantidad:</label>
-                                <input type="text" id="cantidad" name="cantidad" required>
+                                <input type="text" id="cantidad" name="cantidad" required placeholder="Cantidad">
                                 <br>
                                 <label for="url">URL:</label>
-                                <input type="text" id="url" name="url" required>
+                                <input type="text" id="url" name="url" placeholder="URL de la imagen">
                                 <br>
-                                <input type="submit" name="enviar" class="boton" value="Guardar">
-                                <input type="submit" name="enviar" class="boton2" value="Eliminar">
+                                <input type="submit" name="guardar" class="boton" value="Guardar">
+                                <input type="submit" name="eliminar" class="boton2" value="Eliminar">
                             </div>
                         </form>
                     </section>
