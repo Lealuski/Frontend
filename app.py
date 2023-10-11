@@ -1,26 +1,27 @@
 from flask import Flask, render_template
 
+
 app = Flask(__name__)
 
 @app.route('/index')
 def index():
-    return 'Home'
+    return render_template('index.html')
 
 @app.route('/login')
 def login():
-    return 'Login'
+    return render_template('login.html')
 
 @app.route('/detalle')
 def detalle():
-    return 'Detalle productos'
+    return render_template('detalle.html')
 
 @app.route('/catalogo')
 def catalogo():
-    return 'Catalogo'
+    return render_template('catalogo.html')
 
 @app.route('/crud')
 def crud():
-    return 'Crud'
+    return render_template('crud.html')
 
 if __name__ == '__main__':
     app.run(port= 3000, debug=True)
