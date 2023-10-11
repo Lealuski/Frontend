@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, url_for, redirect
 from LDB.conexion import DAO
 
 dao = DAO()
@@ -46,7 +46,7 @@ def insert_prod():
             , "url" : url
         }
         print(dao.insertar_producto(prod))
-        return 'Registrado'
+        return redirect(url_for('catalogo'))
 
 if __name__ == '__main__':
     app.run(port= 3000, debug=True)
