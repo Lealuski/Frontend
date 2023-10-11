@@ -29,17 +29,17 @@ class DAO():
         if self.conexion.is_connected():
             try:
                 cursor = self.conexion.cursor()
-                values = "nombrecorto, nombrelargo, descripcioncorta, descripcionlarga, precio, promocion, cantidad, url"
-                cursor.execute("INSERT INTO producto ('{0}') VALUES ('{1}, {2}, {3}, {4}, {5}, {6}, {7}, {8}')".format(
+                values = "producto_nombrecorto, producto_nombrelargo, producto_descripcioncorto, producto_descripcionlarga, producto_precio, producto_promocion, producto_cantidad, producto_ulrimagen"
+                cursor.execute("INSERT INTO producto ({0}) VALUES ('{1}', '{2}', '{3}', '{4}', '{5}', '{6}', '{7}', '{8}')".format(
                     values
-                    , producto.get('nombrec')
-                    , producto.get('nombrel')
-                    , producto.get('descc')
-                    , producto.get('descl')
-                    , producto.get('precio')
-                    , producto.get('promocion')
-                    , producto.get('cantidad')
-                    , producto.get('url')
+                    , producto.get('nombrec') if producto.get('nombrec') is not None else ""
+                    , producto.get('nombrel') if producto.get('nombrel') is not None else ""
+                    , producto.get('descc') if producto.get('descc') is not None else ""
+                    , producto.get('descl') if producto.get('descl') is not None else ""
+                    , producto.get('precio') if producto.get('precio') is not None else ""
+                    , producto.get('promocion') if producto.get('promocion') is not None else ""
+                    , producto.get('cantidad') if producto.get('cantidad') is not None else ""
+                    , producto.get('url') if producto.get('url') is not None else ""
                 ))
                 self.conexion.commit()
                 return 'Producto "{0} registrado"'.format(producto.get('nombrec'))
