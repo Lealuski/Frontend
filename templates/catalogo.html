@@ -31,12 +31,13 @@
             {% for prod in products %}
             <div class="product-card">
                 <div class="product-image">
-                    <img src="img/tomato_680975.png" alt="Producto">
+                    <img src="{{prod.8}}" alt="Producto">
                 </div>
                 <div class="product-info">
-                    <h1>{{prod.2}}</h1>
-                    <p>{{prod.4}}</p>
-                    <p>Precio: {{prod.6}}</p>
+                    <h1>Nombre corto: {{prod.1}}</h1>
+                    <p>Desc larga: {{prod.4}}</p>
+                    <p>Precio: {{prod.5}}</p>
+                    <h1>Cantidad : {{prod.7}}</h1>
                     <form action="/detalle.html">
                         <button class="view-detail-btn">Ver detalle</button>
                     </form>
