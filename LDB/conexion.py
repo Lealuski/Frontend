@@ -6,8 +6,8 @@ class DAO():
     def __init__(self):
         try:
             self.conexion=mysql.connector.connect(
-                user='majo', 
-                password='46262015', 
+                user='root', 
+                password='', 
                 host='localhost', 
                 database='flamel', 
                 port='3306'
