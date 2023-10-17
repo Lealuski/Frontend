@@ -1,13 +1,13 @@
 import mysql.connector
 from mysql.connector import Error
-
+#Para ejecutar se deben tener las tablas que están en la carpeta Scripts
 class DAO():
 
     def __init__(self):
         try:
             self.conexion=mysql.connector.connect(
-                user='root', 
-                password='', 
+                user='majo', 
+                password='46262015', 
                 host='localhost', 
                 database='flamel', 
                 port='3306'
