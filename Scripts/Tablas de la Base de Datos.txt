@@ -1,0 +1,33 @@
+Scripts Tablas de las Bases de Datos
+use flamel;
+CREATE TABLE perfil (
+perfil_id INTEGER AUTO_INCREMENT PRIMARY KEY,
+tipo VARCHAR(40)
+);
+CREATE TABLE usuario (
+usuario_id INTEGER AUTO_INCREMENT PRIMARY KEY UNIQUE,
+usuario_arroba VARCHAR(40) UNIQUE,
+usuario_nombre VARCHAR(40)
+);
+CREATE TABLE usuarioPerfil (
+usuarioPerfil_id INTEGER AUTO_INCREMENT PRIMARY KEY,
+usuarioPerfil_usuario INTEGER,
+FOREIGN KEY(usuarioPerfil_usuario) REFERENCES usuario(usuario_id)
+ON DELETE CASCADE ON UPDATE CASCADE
+);
+CREATE TABLE producto (
+producto_id INTEGER AUTO_INCREMENT PRIMARY KEY,
+producto_nombreCorto VARCHAR(30),
+producto_nombreLargo VARCHAR(80),
+producto_descripcionCorto VARCHAR(100),
+producto_descripcionLarga VARCHAR(700),
+producto_precio DOUBLE(15,5),
+producto_promocion DOUBLE(15,5),
+producto_cantidad INTEGER,
+producto_ulrImagen VARCHAR(500)
+);
+CREATE TABLE login (
+login_id INTEGER AUTO_INCREMENT PRIMARY KEY,
+login_usuario VARCHAR(40),
+login_contrasena VARCHAR(10)
+);
